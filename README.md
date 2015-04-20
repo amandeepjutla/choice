@@ -10,4 +10,4 @@ It would be an understatement to say that I'm not a particularly experienced pro
 Run `python choice.py` at the command line. The game's written for Python 2.x and it requires the `curses` module, which is present under OS X and Linux. An unofficial version of `curses` for Windows seems to be available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#curses) and might even work.
 
 #### Copyright
-*Choice* is copyright 2015 Amandeep Jutla and is distributed under the MIT License.
+*Choice* is (c) 2015 Amandeep Jutla and is distributed under the MIT License.

@@ -155,6 +155,7 @@ while screen.running:
                 if won:
                     output_window.draw(data.winning_outcome
                         + congrats)
+                    item_window.highlight_choice(entered)
                     item_window.frame.getkey()
                     screen.running = False
                     break

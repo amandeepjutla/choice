@@ -41,7 +41,7 @@ class Switch(object):
     def __iter__(self):
         yield self.match, True
         raise StopIteration
-    
+
     def match(self, *args):
         if self.fall or not args:
             return True
@@ -76,7 +76,7 @@ class Window(Screen):
                 break
             if case("item"):
                 self.frame = curses.newwin(17, 15, 7, 0)
-                
+
                 iterator = 0
                 for each in item_list:
                     self.frame.addstr(iterator, 0, each)
@@ -105,7 +105,7 @@ class Window(Screen):
                 self.frame.addstr(iterator, 0, each)
             iterator += 1
         self.frame.refresh()
-    
+
 screen = Screen()
 data = Data()
 
@@ -118,7 +118,7 @@ random.shuffle(item_list)
 
 arbiter = Arbiter()
 arbiter.decide_winner(item_list)
-if_only = "\n\nYou really should have chosen the "+arbiter.winner+"..."
+if_only = "\n\nYou really should have chosen the "+arbiter.winner+"."
 congrats = "\n\nCongratualations! You chose well."
 
 for item in item_list:
